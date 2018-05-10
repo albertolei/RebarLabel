@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<KeyinTree xmlns="http://www.bentley.com/schemas/1.0/MicroStation/AddIn/KeyinTree.xsd">
+  <RootKeyinTable ID="root">
+    <Keyword SubtableRef="CommandsList" CommandClass="MacroCommand" CommandWord="RebarLabel" >
+      <Options Required="true"/>
+    </Keyword>
+  </RootKeyinTable>
+
+  <SubKeyinTables>
+    <KeyinTable ID="CommandsList">
+      <Keyword SubtableRef ="Commands" CommandWord="CommandsList">
+        <Options Required="true" />
+      </Keyword>
+    </KeyinTable>
+
+    <KeyinTable ID="Commands">
+      <Keyword CommandWord="drawlabel" />
+      <Keyword CommandWord="modifylabel" />
+    </KeyinTable>
+  </SubKeyinTables>
+
+  <KeyinHandlers>
+    <!--必须是静态方法-->
+    <KeyinHandler Keyin="RebarLabel CommandsList drawlabel" Function="RebarLabel.CommandsList.drawlabel"/>
+    <KeyinHandler Keyin="RebarLabel CommandsList modifylabel" Function="RebarLabel.CommandsList.modifylabel"/>
+  </KeyinHandlers>
+</KeyinTree>

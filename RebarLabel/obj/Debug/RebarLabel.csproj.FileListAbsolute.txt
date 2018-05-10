@@ -1,0 +1,8 @@
+D:\Workspace\NETProjects\RebarLabel\RebarLabel\obj\Debug\RebarLabel.csprojResolveAssemblyReference.cache
+D:\Program Files (x86)\Bentley\AECOsimBuildingDesigner V8i Ss6\AECOsimBuildingDesigner\mdlapps\RebarLabel.dll
+D:\Program Files (x86)\Bentley\AECOsimBuildingDesigner V8i Ss6\AECOsimBuildingDesigner\mdlapps\RebarLabel.pdb
+D:\Workspace\NETProjects\RebarLabel\RebarLabel\obj\Debug\RebarLabel.dll
+D:\Workspace\NETProjects\RebarLabel\RebarLabel\obj\Debug\RebarLabel.pdb
+D:\Workspace\NETProjects\RebarLabel\RebarLabel\obj\Debug\RebarLabel.LabelTextForm.resources
+D:\Workspace\NETProjects\RebarLabel\RebarLabel\obj\Debug\RebarLabel.csproj.GenerateResource.Cache
+D:\Workspace\NETProjects\RebarLabel\RebarLabel\obj\Debug\RebarLabel.LabelModifyForm.resources
