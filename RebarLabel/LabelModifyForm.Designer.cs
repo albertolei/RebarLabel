@@ -81,7 +81,7 @@
             this.Controls.Add(this.grade_comboBox);
             this.Controls.Add(this.content_textBox);
             this.Name = "LabelModifyForm";
-            this.Text = "LabelModifyForm";
+            this.Text = "修改标签";
             this.Load += new System.EventHandler(this.LabelModifyForm_Load);
             this.ResumeLayout(false);
             this.PerformLayout();

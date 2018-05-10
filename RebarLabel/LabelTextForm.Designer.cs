@@ -670,6 +670,7 @@
             this.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.Text = "标签文字";
             this.TopMost = true;
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.LabelTextForm_FormClosed);
             this.Load += new System.EventHandler(this.LabelTextForm_Load);
             this.ResumeLayout(false);
             this.PerformLayout();

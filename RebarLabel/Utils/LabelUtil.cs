@@ -54,6 +54,8 @@ namespace RebarLabel.Utils
                     Point.X = current_point.X;
                 }
                 Element guide_line = create_line(current_point, Point);
+                LineElement line_element = guide_line.AsLineElement();
+                
                 Element label = create_rebar_label(content);
                 Range3d label_range = label.Range;
                 Point3d down_left = label_range.Low, up_right = label_range.High;

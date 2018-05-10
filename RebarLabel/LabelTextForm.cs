@@ -38,6 +38,10 @@ namespace RebarLabel
             this.side_diameter_comboBox.SelectedIndex = 0;
             this.side_grade_comboBox.SelectedIndex = 0;
         }
+        private void LabelTextForm_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            LabelUtil.label_text_form.Hide();
+        }
         private void set_content(object sender, EventArgs e)
         {
             string code = this.code_comboBox.SelectedItem == null ? "" : this.code_comboBox.SelectedItem.ToString();
@@ -49,71 +53,53 @@ namespace RebarLabel
             string direction = this.direction_comboBox.SelectedItem == null ? "" : this.direction_comboBox.SelectedItem.ToString();
             string c1 = this.c1_textBox.Text;
             string c2 = this.c2_textBox.Text;
-
-            string content = " " + code + "" + num + "(" + span + cantilever + ")" + " " + b + "×" + h + " " + direction + c1 + "×" + c2 + "\r\n";
-            
+            string content = " " + code + "" + num + "(" + span + cantilever + ")" + " " + b + "X" + h + " " + direction + c1 + "X" + c2 + "\r\n";
             string stirrup = this.stirrup_comboBox.SelectedItem == null ? "" : this.stirrup_comboBox.SelectedItem.ToString();
             string grade = "";
             switch (stirrup)
             {
                 case "HPB300":
-                    grade = "";
+                    grade = "%%130";
                     break;
                 case "HRB335":
-                    grade = "";
-                    break;
                 case "HRBF335":
-                    grade = "";
+                    grade = "%%131";
                     break;
                 case "HRB400":
-                    grade = "";
-                    break;
                 case "HRBF400":
-                    grade = "";
-                    break;
                 case "RRB400":
-                    grade = "";
+                    grade = "%%132";
                     break;
                 case "HRB500":
-                    grade = "";
-                    break;
                 case "HRBF500":
-                    grade = "";
+                    grade = "%%132";
                     break;
             }
             string diameter = this.diameter_comboBox.SelectedItem == null ? "" : this.diameter_comboBox.SelectedItem.ToString();
             string densification = this.densification_textBox.Text;
             string other = this.other_textBox.Text;
             string leg_num = this.leg_number_textBox3.Text;
-            content += grade + diameter + "@" + densification + "/" + other + "(" + leg_num + ")";
+            content += " " + grade + diameter + "@" + densification + "/" + other + "(" + leg_num + ")";
 
             string longitudinal = this.longitudinal_comboBox.SelectedItem == null ? "" : this.longitudinal_comboBox.SelectedItem.ToString();
             string longitudinal_grade = "";
             switch (longitudinal)
             {
                 case "HPB300":
-                    longitudinal_grade = "";
+                    longitudinal_grade = "%%130";
                     break;
                 case "HRB335":
-                    longitudinal_grade = "";
-                    break;
                 case "HRBF335":
-                    longitudinal_grade = "";
+                    longitudinal_grade = "%%131";
                     break;
                 case "HRB400":
-                    longitudinal_grade = "";
-                    break;
                 case "HRBF400":
-                    longitudinal_grade = "";
-                    break;
                 case "RRB400":
-                    longitudinal_grade = "";
+                    longitudinal_grade = "%%132";
                     break;
                 case "HRB500":
-                    longitudinal_grade = "";
-                    break;
                 case "HRBF500":
-                    longitudinal_grade = "";
+                    longitudinal_grade = "%%133";
                     break;
             }
             diameter = this.longitudinal_diameter_comboBox.SelectedItem == null ? "" : this.longitudinal_diameter_comboBox.SelectedItem.ToString();
@@ -128,28 +114,20 @@ namespace RebarLabel
             switch (side)
             {
                 case "HPB300":
-                    side_grade = "";
+                    side_grade = "%%130";
                     break;
                 case "HRB335":
-                    side_grade = "";
-                    break;
                 case "HRBF335":
-                    side_grade = "";
+                    side_grade = "%%131";
                     break;
                 case "HRB400":
-                    side_grade = "";
-                    break;
                 case "HRBF400":
-                    side_grade = "";
-                    break;
                 case "RRB400":
-                    side_grade = "";
+                    side_grade = "%%132";
                     break;
                 case "HRB500":
-                    side_grade = "";
-                    break;
                 case "HRBF500":
-                    side_grade = "";
+                    side_grade = "%%133";
                     break;
             }
             content += " " + side_type + side_num + side_grade + side_diameter + "\r\n";
@@ -157,6 +135,7 @@ namespace RebarLabel
             content += " (" + difference + ")";
             this.content.Text = content;
         }
+        
 
     }
 }

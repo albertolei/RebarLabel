@@ -1,4 +1,3 @@
-D:\Workspace\NETProjects\RebarLabel\RebarLabel\obj\Debug\RebarLabel.csprojResolveAssemblyReference.cache
 D:\Program Files (x86)\Bentley\AECOsimBuildingDesigner V8i Ss6\AECOsimBuildingDesigner\mdlapps\RebarLabel.dll
 D:\Program Files (x86)\Bentley\AECOsimBuildingDesigner V8i Ss6\AECOsimBuildingDesigner\mdlapps\RebarLabel.pdb
 D:\Workspace\NETProjects\RebarLabel\RebarLabel\obj\Debug\RebarLabel.dll

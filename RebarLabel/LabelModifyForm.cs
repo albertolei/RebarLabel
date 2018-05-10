@@ -31,19 +31,19 @@ namespace RebarLabel
                 case 0:
                     break;
                 case 1:
-                    insert = "";
+                    insert = "%%130";
                     break;
                 case 2:
                 case 3:
-                    insert += "";
+                    insert += "%%131";
                     break;
                 case 4:
                 case 5:
                 case 6:
-                    insert += "";
+                    insert += "%%132";
                     break;
                 case 7:
-                    insert += "";
+                    insert += "%%133";
                     break;
             }
             str = str.Insert(start_index, insert);

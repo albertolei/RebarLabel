@@ -81,6 +81,7 @@ namespace RebarLabel.Utils
             {
                 app.ShowStatus("无效元素");
             }
+            app.ShowPrompt(Element.Type.ToString());
         }
 
         public void LocateReset()
